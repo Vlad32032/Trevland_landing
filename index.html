@@ -5,15 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trevland</title>
 
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">Trevland</div>
 
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#locations">Location</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="button header__button">Booking now</button>
+        </div>
     </header>
 
     <main>
+        <section class="home">
+            <div class="container">
+                <h1 class="home__h1">Railtrips To Here, There And Everywhere!</h1>
+                <p class="description home__description">We all wish to start our year the best way possible and 
+                    also according to a common belief if you have a great start to your.</p>
 
+                <button class="button home__button">Explore more</button>
+            </div>
+        </section>
+
+        <section class="locations" id="locations">
+            <div class="container">
+                <h2 class="title locations__title">Popular Location</h2>
+                <p class="description locations__description">For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the</p>
+
+                <div class="locations__cards">
+                    <div class="locations-card">
+                        <img src="./img/location-turkey.jpg" alt="location in Turkey">
+                        <h3 class="locations-card__title">Istanbul, Turkey</h3>
+                        <p class="description locations-card__description">Istanbul is a major city in Turkey that straddles Europe.</p>
+                    </div>
+
+                    <div class="locations-card">
+                        <img src="./img/location-malaysia.jpg" alt="location in Malaysia">
+                        <h3 class="locations-card__title">Kuala Lumpur, Malaysia</h3>
+                        <p class="description locations-card__description">A 272-step long trek leads you to this century.</p>
+                    </div>
+
+                    <div class="locations-card">
+                        <img src="./img/location-south-korea.jpg" alt="location in South Korea">
+                        <h3 class="locations-card__title">Seoul, South Korea</h3>
+                        <p class="description locations-card__description">South Korea officially the Republic of Korea is a country in East Asia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers">
+            <h2 class="title offers__title">Special Offers</h2>
+            <p class="description offers__description">With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates</p>
+
+            <div class="offers__cards">
+                <div class="offers-card">
+                    <img src="./img/offers-statue-of-liberty.jpg" alt="Statue of Liberty">
+                    <h3 class="offers-card__title">Statue of Liberty</h3>
+                    <div>
+                        <span class="offers-card__location-name">New York</span>
+                        <span class="offers-card__rating">4.8</span>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer>

@@ -6,3 +6,320 @@
     font-family: 'Roboto', sans-serif;
 */
 
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #0000004D;
+    --orange: #C9453B;
+
+    --text-home: var(--white);
+    --text-main: var(--black);
+    --button-text-color: var(--white);
+    --button-bg-color: var(--orange);
+
+    --home-bg-color: var(--gray);
+    --home-bg-image: url(../img/trevland_bg.jpg);
+
+    --locations-card-bg-color: var(--white);
+    /* --home-bg-image:  */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {   
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    color: var(--text-main);
+}
+
+a {
+    color: var(--text-home);
+
+    text-decoration: none;
+}
+
+
+
+.container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.button {
+    color: var(--button-text-color);
+    background: var(--button-bg-color);
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+
+    cursor: pointer;
+
+    transition: transform 0.2s, opacity 0.5s;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button:active {
+    transform: translate(0, 2px);
+}
+
+.title {
+    font-family: 'Gelasio', serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 60.2px */
+}
+
+.description {
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+
+    opacity: 0.6;
+}
+
+/* header */
+
+.header {
+    margin-top: 35px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--text-home);
+
+    font-family: 'Ribeye', cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 1.44px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+}
+
+.navigation ul li {
+    margin-right: 50px;
+
+    color: var(--text-home);
+
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.header__button {
+    padding: 14px 35px 13px 36px;
+}
+
+
+
+/* main */
+
+/* home */
+
+.home {
+    min-height: 900px;
+    margin-top: -86px;
+    padding-top: 286px; /* 200 + 51 + 35 */
+    
+    background-color: var(--home-bg-color);
+    background-image: var(--home-bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home__h1 {
+    margin: 0;
+    margin-left: -12px;
+
+    color: var(--text-home);
+
+    font-family: 'Gelasio', serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 78px */
+}
+
+.home__description {
+    max-width: 458px;
+    margin-top: 28px;
+
+    color: var(--text-home);
+
+    text-align: left;
+}
+
+.home__button {
+    margin-top: 40px;
+    padding: 18px 46px 17px 47px;
+}
+
+
+
+/* locations */
+
+.locations {
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+
+.locations__title {
+    width: 346px;
+    margin: 0 auto;
+}
+
+.locations__description {
+    max-width: 735px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.locations__cards {
+    display: flex;
+    margin-top: 50px;
+
+    gap: 30px;
+}
+
+.locations-card {
+    width: 360px;
+    height: 500px;
+
+    background: var(--locations-card-bg-color);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.locations-card:hover {
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+.locations-card__title {
+    margin-top: 35px;
+
+    text-align: center;
+
+    font-family: 'Gelasio', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+}
+
+
+
+/* offers */
+
+.offers {
+    padding-top: 40px;
+}
+
+.offers__title {   
+    width: 346px;
+    margin: 0 auto;
+}
+
+.offers__description {
+    max-width: 658px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.offers__cards {
+    margin-top: 60px;
+}
+
+.offers-card {
+    width: 262px;
+}
+
+.offers-card__title {
+    margin-top: 20px;
+
+    font-family: 'Gelasio', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+}
+
+.offers-card__location-name {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 84px;
+
+    color: #00000099;
+
+    font-size: 20px;
+    line-height: 150%; /* 30px */
+}
+
+.offers-card__location-name::before {
+    content: '';
+
+    width: 11px;
+    height: 15px;
+
+    position: absolute;
+    top: 4px;
+    left: -20px;
+
+    background-image: url(../img/icons/icon-location.svg);
+}
+
+.offers-card__rating {
+    position: relative;
+
+    font-size: 18px;
+    line-height: 150%; /* 27px */
+}
+
+.offers-card__rating::before {
+    content: '';
+
+    width: 21px;
+    height: 21px;
+
+    position: absolute;
+    top: -2px;
+    left: -30px;
+
+    background-image: url(../img/icons/icon-star.svg)
+}
